@@ -6,7 +6,7 @@ var app = express();
 // use router to make API calls
 var router = express.Router();
 var bodyParser = require('body-parser');
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // create database objects
 var sqlite = require("sqlite3").verbose();
@@ -14,7 +14,7 @@ var db = new sqlite.Database("./crowdsource.db");
 
 app.post('/api/submit', function(req, res) {
     console.log(req.body)
-    var stmt = db.run("INSERT INTO diagnostics VALUES (?, ?, ?, ?, ?, ?, ?)", 
+    var stmt = db.run("INSERT INTO diagnostics VALUES (?, ?, ?, ?, ?, ?, ?)",
         req.body.test,
         req.body.disease,
         req.body.sensitivity,
@@ -28,6 +28,18 @@ app.post('/api/submit', function(req, res) {
 
 app.get("/api/all", function(req, res) {
     db.all("SELECT * FROM diagnostics", function(err, row) {
+        res.json(err ? false : row);
+    });
+})
+
+app.get("/api/browse", function(req, res) {
+    db.all("SELECT Test,rowid FROM diagnostics", function(err, row) {
+        res.json(err ? false : row);
+    });
+})
+
+app.get("/api/tests/:test", function(req, res) {
+    db.all("SELECT * FROM diagnostics WHERE (rowid= $rowid)", {$rowid : req.params.test}, function(err, row) {
         res.json(err ? false : row);
     });
 })

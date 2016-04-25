@@ -9,6 +9,6 @@ $(document).ready(function() {
 		post_object.notes = $(".notes").val();
 		post_object.source = $(".source").val();
 		post_object.link = $(".link").val();
-		$.post("http://localhost:8080/api/submit", post_object);
+		$.post("http://155.41.65.224:8080/api/submit", post_object);
 	})
 });
