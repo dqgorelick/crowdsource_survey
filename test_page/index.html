@@ -6,7 +6,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
-    <title>Test Name</title>
+    <title class='test_name'></title>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -19,24 +19,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="/">MyDiagnostic</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="../contact.html">Contact Us</a></li>
+        <li><a href="/browse">Browse</a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -45,23 +33,50 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">COLLABORATE</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="/collaborate">COLLABORATE</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <div class="panel panel-default" id="test_page">
-<!-- WHERE THINGS ARE LOADED-->
+<br>
+<p class='test_label'>Screening Test<br>
+<span class='test_name'></span></p>
+<p id="disease_lab"> Disease of Interest: <span class='disease_name'></span></p>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row"> 
+  <div class="row"> 
+    <div class="col-md-6" id="big_sens">Sensitivity
+      <br>
+      <span class='sens_val' id="big_sens_val"></span>
+      <span id="percent">%</span>
+      <br>
+      <span class="val_notes">If you have <span class='disease_name' id="dis_name"></span>, there is a <span class='sens_val'></span> percent chance that the screening test will identify that you have the disease.
+      <span id="more_notes">This means that if you have <span class='disease_name' id="dis_name"></span>, there is a <span class='1-sens_val'></span> percent chance that you were incorrectly given a negative (healthy) test result.</span></span>
+    </div>
+    <div class="col-md-6" id="big_spec">Specificity
+      <br>
+      <span class='spec_val' id="big_spec_val"></span>
+      <span id="percent">%</span>
+      <br>
+      <span class="val_notes">If you do NOT have <span class='disease_name' id="dis_name"></span>, there is a <span class='spec_val'></span> percent chance that the screening test will identify that you do not have the disease.
+      <span id="more_notes">This means that if you don't have <span class='disease_name' id="dis_name"></span>, there is a <span class='1-spec_val'></span> percent chance that you were falsely diagnosed with the disease.</span></span>
+    </div>
+  </div>
+</div> 
+<br>
+<br>
+<br>
+<br>
+<p id="test_notes"> Notes from our collaborator:<br><br><span class='notes_text'></span></p>
+<br>
+<br>
+<br>
+<p id="source_lab">For more information, you can review the literature below.<br><br>Source: <a id="sourcelink" href=""><span class='source_name'></span></a></p>
 </div>
     <script type="text/javascript" src="../javascripts/test_page.js"></script>
 </body>

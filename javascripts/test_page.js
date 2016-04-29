@@ -8,16 +8,22 @@ $(document).ready(function() {
         }
         return query;
     }
+
     function load_test_page() {
         var query = parseQuery(location.search);
-        $.get("http://155.41.65.224:8080/api/tests/" +  query.test, function(data) {
+        $.get("http://ec2-52-37-252-133.us-west-2.compute.amazonaws.com/api/tests/" +  query.test, function(data) {
             data = data[0];
-            for (var param in data) {
-                $("#test_page").append("<p class='test_text'>"+ data[param] + "</p>");
-            }
-            $("#test_page").append("<img src='http://puppytoob.com/wp-content/uploads/sites/3/2011/10/dog-in-plane.jpg'>");
+            $(".test_name").html(data.Test);
+            $(".disease_name").html(data.Disease);
+            $(".sens_val").html(data.Sensitivity);
+            $(".spec_val").html(data.Specificity);
+            $(".notes_text").html(data.Notes);
+            $(".source_name").html(data.Source);
+            $(".source_link").html(data.Link);
+            $(".1-sens_val").html((100-data.Sensitivity).toFixed(1));
+            $(".1-spec_val").html((100-data.Specificity).toFixed(1));
+            document.getElementById("sourcelink").href=data.Link
             console.log(data.Disease);
-            $("#test_page").append("<p>" + data.Notes + "</p>");
             console.log(data.Link);
             console.log(data.Notes);
             console.log(data.Sensitivity);

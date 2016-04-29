@@ -1,0 +1,12 @@
+Get IP of mac:  ipconfig getifaddr en1
+
+Deleting old items in the database:
+> Open terminal, and go to the folder where project is and type:
+sqlite3 crowdsource.db
+> View all tests 
+SELECT rowid, Test FROM diagnostics;
+> Delete certain rows
+DELETE FROM diagnostics WHERE rowid = 6;
+> exit database
+.exit
+.exit
