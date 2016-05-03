@@ -10,3 +10,462 @@ DELETE FROM diagnostics WHERE rowid = 6;
 > exit database
 .exit
 .exit
+
+
+
+ls
+Last login: Fri Apr 22 00:30:05 on ttys002
+wireless1x-155-41-83-28:~ Jane_McClenathan$ ls
+Applications		Library			cbind.tex
+Desktop			Movies			redwriteandblue-app
+Documents		Music			tmp
+Downloads		Pictures
+Dropbox			Public
+wireless1x-155-41-83-28:~ Jane_McClenathan$ cd 
+wireless1x-155-41-83-28:~ Jane_McClenathan$ cd /Users/Jane_McClenathan/Documents/Bioinformatics/crowdsource_diseases 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls
+collaborate.html	javascripts		server.js
+crowdsource.db		node_modules		stylesheets
+index.html		package.json
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ node server.js 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls 
+collaborate.html	javascripts		server.js
+crowdsource.db		node_modules		stylesheets
+index.html		package.json
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ open .
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ say "Hello"
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ say "How are you doing today"
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ say "How are you doing today"
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ say "Hi Ty Sweeny"
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ node server.js 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ node server.js
+HTTP server listening on PORT 8080
+
+{ test: 'dfsgfdag',
+  disease: 'dsafsdf',
+  specificity: '13',
+  sensitivity: '123',
+  notes: 'dsfs',
+  source: 'dsafdasf',
+  link: 'dsfafsafdf' }
+{ test: 'PSA Test',
+  disease: 'Prostate cancer',
+  specificity: '67',
+  sensitivity: '42',
+  notes: 'This is everything I\'d like to say.',
+  source: 'PubMed',
+  link: 'pubmed.gov' }
+^C
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls
+collaborate.html	javascripts		server.js
+crowdsource.db		node_modules		stylesheets
+index.html		package.json
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ sqlite3 crowdsource.db 
+SQLite version 3.8.5 2014-08-15 22:37:57
+Enter ".help" for usage hints.
+sqlite> .schma
+Error: unknown command or invalid arguments:  "schma". Enter ".help" for help
+sqlite> .schmaa
+Error: unknown command or invalid arguments:  "schmaa". Enter ".help" for help
+sqlite> .schema
+CREATE TABLE diagnostics(Test text, Disease text, Sensitivity real, Specificity real, Notes text, Source text, Link text);
+sqlite> .close
+Error: unknown command or invalid arguments:  "close". Enter ".help" for help
+sqlite> .exit
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls
+collaborate.html	javascripts		server.js
+crowdsource.db		node_modules		stylesheets
+index.html		package.json
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ git 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ cd ..
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ ls
+AVIDA files			crowdsource_diseases
+Exam 2 Study Guide.pptx		example.html
+Homeworks			stupid ass project.xlsx
+Midterm 2 study guide.docx	~$AVIDA cum data.xlsx
+bootstrap-3.3.6			~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ mkdir temp
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cd temp
+wireless1x-155-41-83-28:temp Jane_McClenathan$ git 
+wireless1x-155-41-83-28:temp Jane_McClenathan$ cd ..
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ rmdir temp
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ git clone https://github.com/dqgorelick/crowdsource_survey.git
+Cloning into 'crowdsource_survey'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+Checking connectivity... done.
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cp 
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cp crowdsource_survey/* crowdsource_diseases/
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cd crowdsource_
+-bash: cd: crowdsource_: No such file or directory
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cd crowdsource_diseases/
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls -al
+total 72
+drwxr-xr-x  11 Jane_McClenathan  staff   374 Apr 24 22:16 .
+drwxr-xr-x  14 Jane_McClenathan  staff   476 Apr 24 22:15 ..
+-rw-r--r--   1 Jane_McClenathan  staff    20 Apr 24 22:16 README.md
+-rw-r--r--   1 Jane_McClenathan  staff  5544 Apr 23 20:47 collaborate.html
+-rw-r--r--   1 Jane_McClenathan  staff  8192 Apr 23 20:50 crowdsource.db
+-rw-r--r--   1 Jane_McClenathan  staff  4787 Apr 21 23:19 index.html
+drwxr-xr-x   3 Jane_McClenathan  staff   102 Apr 21 23:48 javascripts
+drwxr-xr-x  49 Jane_McClenathan  staff  1666 Apr 22 00:12 node_modules
+-rw-r--r--   1 Jane_McClenathan  staff   329 Apr 22 00:12 package.json
+-rw-r--r--   1 Jane_McClenathan  staff  1176 Apr 23 20:51 server.js
+drwxr-xr-x   3 Jane_McClenathan  staff   102 Apr 21 23:27 stylesheets
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ cd 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls -al ../crowdsource_
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ cd 
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ cd ../
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ ls
+AVIDA files			crowdsource_survey
+Exam 2 Study Guide.pptx		example.html
+Homeworks			stupid ass project.xlsx
+Midterm 2 study guide.docx	~$AVIDA cum data.xlsx
+bootstrap-3.3.6			~$Exam 2 Study Guide.pptx
+crowdsource_diseases
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cd crowdsource_diseases/
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls -al
+total 72
+drwxr-xr-x  11 Jane_McClenathan  staff   374 Apr 24 22:16 .
+drwxr-xr-x  14 Jane_McClenathan  staff   476 Apr 24 22:15 ..
+-rw-r--r--   1 Jane_McClenathan  staff    20 Apr 24 22:16 README.md
+-rw-r--r--   1 Jane_McClenathan  staff  5544 Apr 23 20:47 collaborate.html
+-rw-r--r--   1 Jane_McClenathan  staff  8192 Apr 23 20:50 crowdsource.db
+-rw-r--r--   1 Jane_McClenathan  staff  4787 Apr 21 23:19 index.html
+drwxr-xr-x   3 Jane_McClenathan  staff   102 Apr 21 23:48 javascripts
+drwxr-xr-x  49 Jane_McClenathan  staff  1666 Apr 22 00:12 node_modules
+-rw-r--r--   1 Jane_McClenathan  staff   329 Apr 22 00:12 package.json
+-rw-r--r--   1 Jane_McClenathan  staff  1176 Apr 23 20:51 server.js
+drwxr-xr-x   3 Jane_McClenathan  staff   102 Apr 21 23:27 stylesheets
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ cd ..
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ ls
+AVIDA files			crowdsource_survey
+Exam 2 Study Guide.pptx		example.html
+Homeworks			stupid ass project.xlsx
+Midterm 2 study guide.docx	~$AVIDA cum data.xlsx
+bootstrap-3.3.6			~$Exam 2 Study Guide.pptx
+crowdsource_diseases
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ ls 0al
+ls: 0al: No such file or directory
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ ls -al
+total 1352
+drwxr-xr-x  14 Jane_McClenathan  staff     476 Apr 24 22:15 .
+drwx------+ 16 Jane_McClenathan  staff     544 Apr 15 14:08 ..
+-rw-r--r--@  1 Jane_McClenathan  staff   10244 Apr 21 23:08 .DS_Store
+drwxr-xr-x  33 Jane_McClenathan  staff    1122 Apr 20 23:01 AVIDA files
+-rw-------@  1 Jane_McClenathan  staff  477807 Mar 15 18:53 Exam 2 Study Guide.pptx
+drwxr-xr-x  10 Jane_McClenathan  staff     340 Apr 20 23:01 Homeworks
+-rw-------@  1 Jane_McClenathan  staff  143148 Mar 30 10:59 Midterm 2 study guide.docx
+drwxr-xr-x@ 27 Jane_McClenathan  staff     918 Apr 20 10:44 bootstrap-3.3.6
+drwxr-xr-x  11 Jane_McClenathan  staff     374 Apr 24 22:16 crowdsource_diseases
+drwxr-xr-x   5 Jane_McClenathan  staff     170 Apr 24 22:15 crowdsource_survey
+-rw-r--r--   1 Jane_McClenathan  staff       0 Apr 19 21:45 example.html
+-rw-------@  1 Jane_McClenathan  staff   46542 Apr 20 23:34 stupid ass project.xlsx
+-rw-r--r--@  1 Jane_McClenathan  staff     171 Feb 29 18:43 ~$AVIDA cum data.xlsx
+-rw-------@  1 Jane_McClenathan  staff     165 Mar 20 10:24 ~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ ls -al crowdsource_survey/
+total 16
+drwxr-xr-x   5 Jane_McClenathan  staff  170 Apr 24 22:15 .
+drwxr-xr-x  14 Jane_McClenathan  staff  476 Apr 24 22:15 ..
+drwxr-xr-x  13 Jane_McClenathan  staff  442 Apr 24 22:15 .git
+-rw-r--r--   1 Jane_McClenathan  staff  529 Apr 24 22:15 .gitignore
+-rw-r--r--   1 Jane_McClenathan  staff   20 Apr 24 22:15 README.md
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cp * crowdsource_survey/ crowdsource_diseases/
+cp: AVIDA files is a directory (not copied).
+cp: Homeworks is a directory (not copied).
+cp: bootstrap-3.3.6 is a directory (not copied).
+cp: crowdsource_diseases is a directory (not copied).
+cp: crowdsource_survey is a directory (not copied).
+cp: crowdsource_survey/ is a directory (not copied).
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cp crowdsource_survey/* crowdsource_diseases/*
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cp crowdsource_survey/* crowdsource_diseases/
+wireless1x-155-41-83-28:Bioinformatics Jane_McClenathan$ cd crowdsource_diseases/
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls
+Exam 2 Study Guide.pptx		example.html			server.js
+Midterm 2 study guide.docx	index.html			stupid ass project.xlsx
+README.md			javascripts			stylesheets
+collaborate.html		node_modules			~$AVIDA cum data.xlsx
+crowdsource.db			package.json			~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls -al
+total 1400
+drwxr-xr-x  17 Jane_McClenathan  staff     578 Apr 24 22:17 .
+drwxr-xr-x  14 Jane_McClenathan  staff     476 Apr 24 22:15 ..
+-rw-------@  1 Jane_McClenathan  staff  477807 Apr 24 22:17 Exam 2 Study Guide.pptx
+-rw-------@  1 Jane_McClenathan  staff  143148 Apr 24 22:17 Midterm 2 study guide.docx
+-rw-r--r--   1 Jane_McClenathan  staff      20 Apr 24 22:17 README.md
+-rw-r--r--   1 Jane_McClenathan  staff    5544 Apr 23 20:47 collaborate.html
+-rw-r--r--   1 Jane_McClenathan  staff    8192 Apr 23 20:50 crowdsource.db
+-rw-r--r--   1 Jane_McClenathan  staff       0 Apr 24 22:17 example.html
+-rw-r--r--   1 Jane_McClenathan  staff    4787 Apr 21 23:19 index.html
+drwxr-xr-x   3 Jane_McClenathan  staff     102 Apr 21 23:48 javascripts
+drwxr-xr-x  49 Jane_McClenathan  staff    1666 Apr 22 00:12 node_modules
+-rw-r--r--   1 Jane_McClenathan  staff     329 Apr 22 00:12 package.json
+-rw-r--r--   1 Jane_McClenathan  staff    1176 Apr 23 20:51 server.js
+-rw-------@  1 Jane_McClenathan  staff   46542 Apr 24 22:17 stupid ass project.xlsx
+drwxr-xr-x   3 Jane_McClenathan  staff     102 Apr 21 23:27 stylesheets
+-rw-r--r--@  1 Jane_McClenathan  staff     171 Apr 24 22:17 ~$AVIDA cum data.xlsx
+-rw-------@  1 Jane_McClenathan  staff     165 Apr 24 22:17 ~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm ~
+~Jane_McClenathan/      ~_cyrus                 ~_krb_anonymous/        ~_networkd/             ~_timezone/
+~_amavisd               ~_devdocs/              ~_krb_changepw/         ~_nsurlsessiond/        ~_tokend/
+~_appleevents/          ~_devicemgr/            ~_krb_kadmin/           ~_nsurlstoraged/        ~_trustevaluationagent/
+~_appowner/             ~_displaypolicyd/       ~_krb_kerberos/         ~_postfix/              ~_unknown/
+~_appserver/            ~_distnote/             ~_krb_krbtgt/           ~_postgres/             ~_update_sharing/
+~_ard/                  ~_dovecot/              ~_krbfast/              ~_qtss/                 ~_usbmuxd/
+~_assetcache/           ~_dovenull/             ~_krbtgt/               ~_sandbox/              ~_uucp/
+~_astris/               ~_dpaudio/              ~_launchservicesd/      ~_screensaver/          ~_warmd/
+~_atsserver/            ~_eppc/                 ~_lda/                  ~_scsd/                 ~_webauthserver/
+~_avbdeviced/           ~_ftp/                  ~_locationd/            ~_securityagent/        ~_windowserver/
+~_calendar/             ~_geod/                 ~_lp/                   ~_serialnumberd/        ~_www/
+~_ces/                  ~_iconservices/         ~_mailman/              ~_softwareupdate/       ~_xcsbuildagent/
+~_clamav                ~_installassistant/     ~_mcxalr/               ~_spotlight/            ~_xcscredserver/
+~_coreaudiod/           ~_installer/            ~_mdnsresponder/        ~_sshd/                 ~daemon/
+~_coremediaiod/         ~_jabber/               ~_mysql/                ~_svn/                  ~nobody/
+~_cvmsroot/             ~_kadmin_admin/         ~_netbios/              ~_taskgated/            ~root/
+~_cvs/                  ~_kadmin_changepw/      ~_netstatistics/        ~_teamsserver           
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm ~
+~Jane_McClenathan/      ~_cyrus                 ~_krb_anonymous/        ~_networkd/             ~_timezone/
+~_amavisd               ~_devdocs/              ~_krb_changepw/         ~_nsurlsessiond/        ~_tokend/
+~_appleevents/          ~_devicemgr/            ~_krb_kadmin/           ~_nsurlstoraged/        ~_trustevaluationagent/
+~_appowner/             ~_displaypolicyd/       ~_krb_kerberos/         ~_postfix/              ~_unknown/
+~_appserver/            ~_distnote/             ~_krb_krbtgt/           ~_postgres/             ~_update_sharing/
+~_ard/                  ~_dovecot/              ~_krbfast/              ~_qtss/                 ~_usbmuxd/
+~_assetcache/           ~_dovenull/             ~_krbtgt/               ~_sandbox/              ~_uucp/
+~_astris/               ~_dpaudio/              ~_launchservicesd/      ~_screensaver/          ~_warmd/
+~_atsserver/            ~_eppc/                 ~_lda/                  ~_scsd/                 ~_webauthserver/
+~_avbdeviced/           ~_ftp/                  ~_locationd/            ~_securityagent/        ~_windowserver/
+~_calendar/             ~_geod/                 ~_lp/                   ~_serialnumberd/        ~_www/
+~_ces/                  ~_iconservices/         ~_mailman/              ~_softwareupdate/       ~_xcsbuildagent/
+~_clamav                ~_installassistant/     ~_mcxalr/               ~_spotlight/            ~_xcscredserver/
+~_coreaudiod/           ~_installer/            ~_mdnsresponder/        ~_sshd/                 ~daemon/
+~_coremediaiod/         ~_jabber/               ~_mysql/                ~_svn/                  ~nobody/
+~_cvmsroot/             ~_kadmin_admin/         ~_netbios/              ~_taskgated/            ~root/
+~_cvs/                  ~_kadmin_changepw/      ~_netstatistics/        ~_teamsserver           
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm ~
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls
+Exam 2 Study Guide.pptx		example.html			server.js
+Midterm 2 study guide.docx	index.html			stupid ass project.xlsx
+README.md			javascripts			stylesheets
+collaborate.html		node_modules			~$AVIDA cum data.xlsx
+crowdsource.db			package.json			~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ open .
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls
+collaborate.html		javascripts			stylesheets
+crowdsource.db			node_modules			~$AVIDA cum data.xlsx
+example.html			package.json			~$Exam 2 Study Guide.pptx
+index.html			server.js
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm ~$AVIDA cum data.xlsx
+rm: ~: No such file or directory
+rm: cum: No such file or directory
+rm: data.xlsx: No such file or directory
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm -r ~$AVIDA cum data.xlsx
+rm: ~: No such file or directory
+rm: cum: No such file or directory
+rm: data.xlsx: No such file or directory
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm -rf ~$AVIDA cum data.xlsx
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ rm -rf ~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ ls -al
+total 96
+drwxr-xr-x  14 Jane_McClenathan  staff   476 Apr 24 22:18 .
+drwxr-xr-x  15 Jane_McClenathan  staff   510 Apr 24 22:18 ..
+-rw-r--r--@  1 Jane_McClenathan  staff  6148 Apr 24 22:18 .DS_Store
+-rw-r--r--   1 Jane_McClenathan  staff  5544 Apr 23 20:47 collaborate.html
+-rw-r--r--   1 Jane_McClenathan  staff  8192 Apr 23 20:50 crowdsource.db
+-rw-r--r--   1 Jane_McClenathan  staff     0 Apr 24 22:17 example.html
+-rw-r--r--   1 Jane_McClenathan  staff  4787 Apr 21 23:19 index.html
+drwxr-xr-x   3 Jane_McClenathan  staff   102 Apr 21 23:48 javascripts
+drwxr-xr-x  49 Jane_McClenathan  staff  1666 Apr 22 00:12 node_modules
+-rw-r--r--   1 Jane_McClenathan  staff   329 Apr 22 00:12 package.json
+-rw-r--r--   1 Jane_McClenathan  staff  1176 Apr 23 20:51 server.js
+drwxr-xr-x   3 Jane_McClenathan  staff   102 Apr 21 23:27 stylesheets
+-rw-r--r--@  1 Jane_McClenathan  staff   171 Apr 24 22:17 ~$AVIDA cum data.xlsx
+-rw-------@  1 Jane_McClenathan  staff   165 Apr 24 22:17 ~$Exam 2 Study Guide.pptx
+wireless1x-155-41-83-28:crowdsource_diseases Jane_McClenathan$ cd ../crowdsource_survey/
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ls
+README.md
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ls -al
+total 16
+drwxr-xr-x   5 Jane_McClenathan  staff  170 Apr 24 22:15 .
+drwxr-xr-x  15 Jane_McClenathan  staff  510 Apr 24 22:18 ..
+drwxr-xr-x  13 Jane_McClenathan  staff  442 Apr 24 22:15 .git
+-rw-r--r--   1 Jane_McClenathan  staff  529 Apr 24 22:15 .gitignore
+-rw-r--r--   1 Jane_McClenathan  staff   20 Apr 24 22:15 README.md
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ cp 
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	collaborate.html
+	crowdsource.db
+	example.html
+	index.html
+	javascripts/
+	package.json
+	server.js
+	stylesheets/
+
+nothing added to commit but untracked files present (use "git add" to track)
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git add -A
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   collaborate.html
+	new file:   crowdsource.db
+	new file:   example.html
+	new file:   index.html
+	new file:   javascripts/index.js
+	new file:   package.json
+	new file:   server.js
+	new file:   stylesheets/index.css
+
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git commit -m 'adding current progress'
+[master 8a1131f] adding current progress
+ 8 files changed, 423 insertions(+)
+ create mode 100644 collaborate.html
+ create mode 100644 crowdsource.db
+ create mode 100644 example.html
+ create mode 100644 index.html
+ create mode 100644 javascripts/index.js
+ create mode 100644 package.json
+ create mode 100644 server.js
+ create mode 100644 stylesheets/index.css
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git push origin master
+Username for 'https://github.com': dqgorelick
+Password for 'https://dqgorelick@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (12/12), 4.83 KiB | 0 bytes/s, done.
+Total 12 (delta 1), reused 0 (delta 0)
+To https://github.com/dqgorelick/crowdsource_survey.git
+   fd5196f..8a1131f  master -> master
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ls
+README.md		crowdsource.db		index.html		node_modules		server.js
+collaborate.html	example.html		javascripts		package.json		stylesheets
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ls
+README.md		crowdsource.db		index.html		node_modules		server.js
+collaborate.html	example.html		javascripts		package.json		stylesheets
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ls
+README.md		crowdsource.db		javascripts		server.js
+browse.html		example.html		node_modules		stylesheets
+collaborate.html	index.html		package.json
+gwireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git pull origin master
+^C
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git stash
+git pulNo local changes to save
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ git pull origin master
+remote: Counting objects: 17, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 17 (delta 7), reused 17 (delta 7), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+From https://github.com/dqgorelick/crowdsource_survey
+ * branch            master     -> FETCH_HEAD
+   8a1131f..6b5c64e  master     -> origin/master
+Updating 8a1131f..6b5c64e
+Fast-forward
+ browse/index.html                          |  66 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ collaborate.html => collaborate/index.html |  20 ++++++++++----------
+ crowdsource.db                             | Bin 8192 -> 8192 bytes
+ index.html                                 |   6 +++---
+ javascripts/browse.js                      |  11 +++++++++++
+ javascripts/index.js                       |   2 +-
+ javascripts/test_page.js                   |  31 +++++++++++++++++++++++++++++++
+ server.js                                  |  18 +++++++++++++++---
+ stylesheets/index.css                      |   8 ++++++++
+ test_page/index.html                       |  68 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 10 files changed, 213 insertions(+), 17 deletions(-)
+ create mode 100644 browse/index.html
+ rename collaborate.html => collaborate/index.html (94%)
+ create mode 100644 javascripts/browse.js
+ create mode 100644 javascripts/test_page.js
+ create mode 100644 test_page/index.html
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ node server.js 
+^C
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ 
+(reverse-i-search)`': 
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ipconfig getifaddr en1
+155.41.56.177
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ node server.js 
+HTTP server listening on PORT 8080
+^C
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ node server.js 
+HTTP server listening on PORT 8080
+^C
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ipconfig getifaddr en1
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ ls
+README.md			collaborate			index.html			node_modules			stylesheets
+browse				crowdsource.db			instructions_for_jane.txt	package.json			test_page
+browse.html			example.html			javascripts			server.js
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ sqlite3 crowdsource.db 
+SQLite version 3.8.5 2014-08-15 22:37:57
+Enter ".help" for usage hints.
+sqlite> SELECT * FROM diagnostics;
+fasdf|asdfasdf|123123.0|123123.0|123123|123123|
+fasdf|asdfasdf|123123.0|123123.0|123123|123123|123123
+||||||
+dfsgfdag|dsafsdf|13.0|123.0|||
+PSA Test|Prostate cancer|67.0|42.0|||
+2ersdf|sdfgh|234.0|2345.0|ejdklfjlkdjslfjas|sadgfsf|sadgfd
+Prostate-specific antigen (4ng/mL)|Prostate Cancer|44.0|92.0|Prostate specific antigen tests, more commonly known as PSA tests, were once widely used but are now criticized by much of the medical community. Sensitivity and specificity values vary across studies, but all studies demonstrate lack of validity.|Prostate specific antigen for early detection of prostate cancer: longitudinal study|http://www.bmj.com/content/339/bmj.b3537
+Mammography|Breast Cancer|86.6|96.8||Influence of personal characteristics of individual women on sensitivity and specificity of mammography in the Million Women Study: cohort study|http://www.bmj.com/content/329/7464/477?goto=reply
+sqlite> SELECT Tests FROM diagnostics
+   ...> ;
+Error: no such column: Tests
+sqlite> SELECT Test FROM diagnostics;
+fasdf
+fasdf
+
+dfsgfdag
+PSA Test
+2ersdf
+Prostate-specific antigen (4ng/mL)
+Mammography
+sqlite> SELECT rowid, Test FROM diagnostics;
+1|fasdf
+2|fasdf
+3|
+4|dfsgfdag
+5|PSA Test
+6|2ersdf
+7|Prostate-specific antigen (4ng/mL)
+8|Mammography
+sqlite> DROP * FROM diagnost^C^Cwireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ 
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ sqlite3 crowdsource.db 
+SQLite version 3.8.5 2014-08-15 22:37:57
+Enter ".help" for usage hints.
+sqlite> DELETE FROM diagnostics WHERE rowid < 6;
+sqlite> SELECT rowid, Test FROM diagnostics;
+6|2ersdf
+7|Prostate-specific antigen (4ng/mL)
+8|Mammography
+sqlite> DELETE FROM diagnostics WHERE rowid = 6
+   ...> ;
+sqlite> SELECT rowid, Test FROM diagnostics;
+7|Prostate-specific antigen (4ng/mL)
+8|Mammography
+sqlite> .exit
+wireless1x-155-41-83-28:crowdsource_survey Jane_McClenathan$ node server.js 
+HTTP server listening on PORT 8080
+                    
+ls
+
+
+
+
